@@ -4,3 +4,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility */
+.debug{
+    border: 2px solid red;
+}
+
+.overflow{
+    overflow: auto;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-flex-end{
+    justify-content: flex-end;
+}
