@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+ul li{
+    list-style-type: none;
+}
+
+li{
+    list-style-position: inside;
+}
+
+img{
+    display: block;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #5a5a5a;
+}
+
 /* utility */
 .debug{
     border: 2px solid red;
@@ -36,6 +70,18 @@
     flex-direction: column;
 }
 
+.jc-sb{
+    justify-content: space-between;
+}
+
 .jc-flex-end{
     justify-content: flex-end;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ai-start{
+    align-items: start;
 }

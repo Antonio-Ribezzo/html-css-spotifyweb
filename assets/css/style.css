@@ -4,16 +4,114 @@
     height: 100vh;
 }
 
-/* sidebar */
+/*********************************/
+/************ sidebar ************/
+/*********************************/
+
+/* logo e lista */
 #sidebar{
     height: calc(100% - 100px);
     width: 180px;
     left: 0;
     top: 0;
-    background-color: aquamarine;
+    background-color: #000000;
+    padding: 1rem 0 0.2rem 0;
 }
 
-/* upperbar */
+#sidebar #logo, #sidebar ul li div{
+    padding-left: 1rem;
+}
+
+#logo{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#logo-small{
+    display: none;
+}
+
+#sidebar ul li{
+    margin: 0.5rem 0;
+}
+
+#sidebar h5{
+    color: #5a5a5a;
+    margin-left: 0.5rem;
+}
+
+#home, #search, #library{
+    border-left: 0.2rem solid black;
+}
+
+#home>img, #search>img, #library>img{
+    width: 15%;
+}
+
+#home{
+    border-left: 0.2rem solid #adff30;
+}
+
+#home h5{
+    color: white;
+}
+
+ul{
+    margin-bottom: 1rem;
+}
+
+/* playlist */
+h3, #playlist{
+    padding-left: 1.2rem;
+}
+
+h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+#playlist{
+    margin-top: 1rem;
+}
+
+.fa-plus{
+    font-size: 1.2rem;
+    background-color: grey;
+    color: black;
+    padding:0.4rem;
+    margin-right: 0.5rem;
+}
+
+#playlist ul li{
+    color: #5a5a5a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+/* download e profile */
+#profile{
+    padding: 0 1.2rem;
+}
+
+#profile h6{
+    margin: 0.5rem;
+}
+
+#profile h4{
+    color: white;
+}
+
+#profile #profile-logo{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+}
+
+/*********************************/
+/************ upperbar ***********/
+/*********************************/
+
 #upperbar{
     z-index: 999999;
     height: 80px;
@@ -21,24 +119,30 @@
     top: 0;
     left: 180px;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.256);
+    background-color: #04040458;
 }
 
-/* main */
+/*********************************/
+/************ main ***************/
+/*********************************/
+
 #main{
     height: calc(100% - 100px);
     width: calc(100% - 180px);
     top: 0;
     left: 180px;
     right: 0;
-    background-color: blueviolet;
+    background-color: #141922;
     overflow: auto;
     font-size: 2rem;
 }
 
-/* playbar */
+/*********************************/
+/************ playbar ************/
+/*********************************/
+
 #playbar{
-    background-color: yellow;
+    background-color: #282828;
     height: 100px;
     width: 100%;
     bottom: 0;
@@ -46,22 +150,105 @@
     right: 0;
 }
 
+
+/*********************************/
+/*********** media query *********/
+/*********************************/
+
 @media only screen and (max-width: 600px){
+
     /* sidebar */
     #sidebar{
-        width: 40px;
+        width: 50px;
+        padding: 1rem 0 0.2rem 0;
+        align-items: center;
+    }
+
+    #sidebar ul li div{
+        padding: 0;
+    }
+
+    .container-loghi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+        width: 50%;
+        margin: 0;
+    }
+
+    #home h5, #search h5, #library h5{
+        display: none;
+    }
+
+    #sidebar h3, #playlist{
+        display: none;
+    }
+
+    #sidebar ul li{
+        margin: 1rem 0;
+    }
+
+    #home, #search, #library{
+        border: none;
+        justify-content: center;
+    }
+    
+    #home>img, #search>img, #library>img{
+        width: 40%;
+    }
+    
+    #home{
+        border: none;
+    }
+
+    #profile{
+        align-items: center;
+        padding: 0;
+    }
+
+    #profile h6{
+        display: none;
+    }
+
+    #profile hr{
+        display: none;
+    }
+
+    #profile h4{
+        display: none;
+    }
+
+    #profile #profile-logo{
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    #profile div{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile div img{
+        width: 40%;
     }
     
     /* main */
     #main{
-        width: calc(100% - 40px);
-        left: 40px;
+        width: calc(100% - 50px);
+        left: 50px;
     }
 
     /* upperbar */
     #upperbar{
-        left: 40px;
-        width: calc(100% - 40px);
+        left: 50px;
+        width: calc(100% - 50px);
     }
 }
 

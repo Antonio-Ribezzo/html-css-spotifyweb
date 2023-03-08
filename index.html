@@ -11,11 +11,71 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container-0" class="debug">
-        
-        <div id="sidebar" class="debug fixed">
+
+        <div id="sidebar" class="fixed flex-column jc-sb ai-start">
+            <div class="container-loghi">
+                <img id="logo" src="./assets/img/logo.svg" alt="logo" width="100%">
+                <img id="logo-small" src="./assets/img/logo-small.svg" alt="logo-small">
+                <ul>
+                    <li>
+                        <div id="home" class="flex-row ai-center">
+                            <img src="./assets/img/home.svg" alt="home" width="100%">
+                            <h5>Home</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="search" class="flex-row ai-center">
+                            <img src="./assets/img/search.svg" alt="search" width="100%">
+                            <h5>Cerca</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="library" class="flex-row ai-center">
+                            <img src="./assets/img/libreria.svg" alt="library" width="100%">
+                            <h5>La tua libreria</h5>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>playlist</h3>
+
+                <div id="playlist" class="flex-column">
+                    <div class="flex-row ai-center">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                        <h4>Crea Playlist</h4>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile" class="flex-column">
+                <div class="flex-row ai-center">
+                    <img src="./assets/img/download.svg" alt="download" width="12%">
+                    <h6>Installa app</h6>
+                </div>
+                <hr>
+                <div class="flex-row ai-center">
+                    <img id="profile-logo" src="./assets/img/profile.svg" alt="profile" width="15%">
+                    <h4>John Doe</h4>
+                </div>
+            </div>           
         </div>
 
         <div id="upperbar" class="debug sticky fixed">
