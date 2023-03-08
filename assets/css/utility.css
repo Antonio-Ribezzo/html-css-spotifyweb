@@ -17,6 +17,12 @@ img{
     display: block;
 }
 
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
 h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
@@ -70,8 +76,16 @@ h6{
     flex-direction: column;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .jc-sb{
     justify-content: space-between;
+}
+
+.jc-start{
+    justify-content:flex-start;
 }
 
 .jc-end{
@@ -103,4 +117,9 @@ h6{
     color: white;
     text-transform: uppercase;
     margin-right: 1rem;
+}
+
+.container-60{
+    margin: 0 auto;
+    width: 60%;
 }
