@@ -10,7 +10,7 @@
 
 /* logo e lista */
 #sidebar{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     width: 180px;
     left: 0;
     top: 0;
@@ -131,7 +131,7 @@ h3{
 /*********************************/
 
 #main{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     width: calc(100% - 180px);
     top: 0;
     left: 180px;
@@ -147,19 +147,138 @@ h3{
 
 #playbar{
     background-color: #282828;
-    height: 100px;
+    height: 80px;
     width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 1rem;
+}
+
+/* left content */
+#left-content{
+    flex-basis: 20%;
+    color: #5a5a5a;
+}
+
+#left-content img{
+    width: 3rem;
+}
+
+#left-content img, #left-content .fa-heart{
+    margin-right: 1rem;
+}
+
+#left-content h6{
+    color: white;
+}
+
+#left-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+}
+
+/* right content */
+#right-content{
+    flex-basis: 20%;
+    color: white;
+}
+
+.fa-desktop{
+    margin: 0 1rem;
+}
+
+.fa-volume-high{
+    margin-right: 1rem;
+}
+
+.range-bar {
+    height: 0.2rem;
+    border-radius: 1rem;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#vol{
+    width: 6rem;
+}
+
+.volume-range:hover {
+    opacity: 1;
+}
+
+/* center content */
+#center-content{
+    flex-basis: 60%;
+    color: white;
+}
+
+#center-content i, #center-content h6 {
+    margin: 0 0.7rem;
+    color: white;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
+}
+
+#play{
+    width: 20rem;
 }
 
 
 /*********************************/
 /*********** media query *********/
 /*********************************/
+/* display md */
+@media only screen and (max-width:1024px){
+    #left-content #interactive-icon{
+        margin-left: 1rem;
+    }
+}
 
-@media only screen and (max-width: 600px){
+/* display s */
+@media only screen and (max-width: 768px){
+    /* playbar */
+    #left-content #interactive-icon{
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    #left-content img{
+        width: 3rem;
+    }
+
+    #right-content{
+        font-size: 0.8rem;
+    }
+
+    #right-content i{
+        margin: 0.2rem;
+    }
+
+    #vol{
+        width: 3rem;
+    }
+
+    .fa-circle-play{
+        font-size: 1rem;
+    }
+
+    #center-content i, #center-content h6 {
+        margin: 0 0.4rem;
+        color: white;
+    }
+
+    #play{
+        width: 5rem;
+    }
+}
+/* display xs */
+@media only screen and (max-width: 425px){
 
     /* sidebar */
     #sidebar{
@@ -254,5 +373,51 @@ h3{
         left: 50px;
         width: calc(100% - 50px);
     }
+
+     /* playbar */
+    #description-song{
+        display: none;
+    }
+
+    #left-content img{
+        width: 3rem;
+    }
+
+     #left-content #interactive-icon{
+        display: none;
+    }
+
+    #right-content{
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items:flex-end;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #right-content .fa-volume-high{
+        margin: 0;
+    }
+
+    #vol{
+        width: 3rem;
+        margin-top: 1rem;
+    }
+
+    .fa-circle-play{
+        font-size: 1rem;
+    }
+
+    #center-content i, #center-content h6 {
+        margin: 0 0.4rem;
+        color: white;
+    }
+
+    #play{
+        width: 3rem;
+    }
 }
+
+
+
 

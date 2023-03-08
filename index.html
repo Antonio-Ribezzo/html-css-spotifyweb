@@ -87,7 +87,46 @@
 
         </div>
 
-        <div id="playbar" class="debug fixed">
+        <div id="playbar" class="fixed flex-row jc-sb ai-center">
+            <div id="left-content" class="flex-row jc-sb ai-center">
+                <div class="flex-row ai-center">
+                    <img src="./assets/img/sinister.jpeg" alt="sinister" width="20%">
+                    <div id="description-song" class="flex-column jc-center">
+                        <h6>Sinister</h6>
+                        <p>Brano Nome</p>
+                    </div>
+                </div>
+                
+                <div id="interactive-icon" class="flex-row">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div id="center-content" class="flex-column jc-center ai-center">
+                <div class="flex-row ai-center">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <br>
+                <div class="flex-row ai-center">
+                    <h6>0:25</h6>
+                    <input class="range-bar" type="range" id="play" name="vol" min="0" max="100">
+                    <h6>4:35</h6>
+                </div>
+            </div>
+
+            <div id="right-content" class="flex-row jc-end ai-center">
+                <div class="flex-row">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <input class="range-bar" type="range" id="vol" name="vol" min="0" max="100">
+            </div>
 
         </div>
     </div>

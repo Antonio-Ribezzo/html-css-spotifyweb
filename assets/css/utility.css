@@ -78,6 +78,10 @@ h6{
     justify-content: end;
 }
 
+.jc-center{
+    justify-content: center;
+}
+
 .jc-flex-end{
     justify-content: flex-end;
 }
