@@ -98,6 +98,10 @@ h3{
     margin: 0.5rem;
 }
 
+#profile hr{
+    border-color: #5a5a5a;
+}
+
 #profile h4{
     color: white;
 }

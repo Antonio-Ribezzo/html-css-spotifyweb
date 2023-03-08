@@ -74,6 +74,10 @@ h6{
     justify-content: space-between;
 }
 
+.jc-end{
+    justify-content: end;
+}
+
 .jc-flex-end{
     justify-content: flex-end;
 }
@@ -84,4 +88,15 @@ h6{
 
 .ai-start{
     align-items: start;
+}
+
+.bt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 1rem;
 }
