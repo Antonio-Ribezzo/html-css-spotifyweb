@@ -1,146 +1,153 @@
-/* main container */
+/*********************************/
+/***** container principale ******/
+/*********************************/
 #container-0{
     width: 100%;
     height: 100vh;
 }
 
 /*********************************/
+/*********** upper part **********/
+/*********************************/
+#upper-part{
+    height: calc(100% - 80px);
+  }
+
+/*********************************/
 /************ sidebar ************/
 /*********************************/
 
-/* logo e lista */
 #sidebar{
-    height: calc(100% - 80px);
+    height: 100%;
     width: 180px;
-    left: 0;
-    top: 0;
     background-color: #000000;
-    padding: 1rem 0 0.2rem 0;
+    padding: 0 0 0.2rem 0;
 }
 
-#sidebar #logo, #sidebar ul li div{
-    padding-left: 1rem;
+/* aside top */
+#aside-top{
+    height: calc(100% - 90px);
+    min-height: 300px;
 }
 
 #logo{
-    width: 80%;
-    margin-bottom: 1rem;
+    width: 60%;
+    margin: 1rem 0 1.5rem 1rem;
 }
 
 #logo-small{
     display: none;
 }
 
-#sidebar ul li{
-    margin: 0.5rem 0;
-}
-
-#sidebar ul li h5:hover{
-    color: white;
-}
-
-.container-loghi ul li #search:hover img{
-    filter:invert(1);
-}
-
-.container-loghi ul li #library:hover img{
-    filter:invert(1);
-}
-
-#sidebar h5{
-    color: #5a5a5a;
-    margin-left: 0.5rem;
-}
-
-#home, #search, #library{
-    border-left: 0.2rem solid black;
-}
-
-#home>img, #search>img, #library>img{
-    width: 15%;
+#home>img, 
+#search>img, 
+#library>img{
+    width: 12%;
+    margin: 0.3rem 0 0.3rem 1rem;
 }
 
 #home{
-    border-left: 0.2rem solid #adff30;
+    border-left: 2px solid greenyellow;
 }
 
-#home h5{
+#home>a, 
+#search>a, 
+#library>a{
+    margin-left: 0.3rem;
+}
+
+#aside-top h5, 
+#aside-top #search img,
+#aside-top #library img,
+#list-playlist ul li a,
+#add-playlist a{
     color: white;
+    opacity: 0.6;
 }
 
-ul{
-    margin-bottom: 1rem;
+#home div img, #home h5{
+    opacity: 1;
 }
 
-/* playlist */
-h3, #playlist{
-    padding-left: 1.2rem;
+#aside-top #search:hover img,
+#aside-top #library:hover img,
+#list-playlist ul li a:hover,
+#add-playlist:hover i,
+#add-playlist:hover a{
+    opacity: 1;
 }
 
-h3{
+#aside-top #search:hover h5,
+#aside-top #library:hover h5{
+    opacity: 1;
+}
+
+#aside-top h3{
     color: white;
     text-transform: uppercase;
-}
-
-#playlist{
-    margin-top: 1rem;
+    margin: 1rem 0 0.3rem 1rem;
 }
 
 .fa-plus{
     font-size: 1.2rem;
-    background-color: grey;
+    background-color: white;
+    opacity: 0.6;
     color: black;
     padding:0.4rem;
-    margin-right: 0.5rem;
+    margin: 0.3rem 0 0.3rem 1rem;
 }
 
-#playlist>div:hover h4{
-    color:white;
+#add-playlist h4{
+    margin-left: 0.5rem;
 }
 
-#playlist>div:hover .fa-plus{
-    background-color: white;
+#list-playlist ul{
+    margin-left: 1rem;
 }
 
-#playlist ul li{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    margin: 0.7rem 0;
+#list-playlist ul li{
+    line-height: 1.5rem;
 }
 
-#playlist ul li a{
-    color: #5a5a5a;
+#list-playlist{
+    padding-right: 2rem;
+    overflow: auto;
 }
 
-#playlist ul li a:hover{
-    color: white;
-}
-
-/* download e profile */
-#profile{
+/* aside bottom */
+#aside-bottom{
+    height: 90px;
     padding: 0 1.2rem;
 }
 
-#profile h6{
+#aside-bottom h6{
     margin: 0.5rem;
 }
 
-#profile hr{
+#aside-bottom hr{
     border-color: #5a5a5a;
 }
 
-#profile h4{
+#aside-bottom h4{
     color: white;
 }
 
-#profile #profile-logo{
+#aside-bottom #profile-logo{
     margin: 0.5rem 0.5rem 0.5rem 0;
     background-color: #5a5a5a;
     border-radius: 50%;
 }
 
-#profile>div:hover h6{
+#aside-bottom>div:hover h6{
     color: white;
+} 
+
+#download{
+    margin-left: -3px;
+}
+
+#aside-bottom img{
+    width: 15%;
 }
 
 /*********************************/
@@ -162,15 +169,16 @@ h3{
 /*********************************/
 
 #main{
-    height: calc(100% - 80px);
+    height: 100%;
     width: calc(100% - 180px);
-    top: 0;
-    left: 180px;
-    right: 0;
     background-color: #141922;
     overflow: auto;
     font-size: 2rem;
-    padding: 90px 1rem 1rem 1rem;
+    padding: 0px 1rem 1rem 1rem;
+}
+
+#main ul{
+    margin-top: 90px;
 }
 
 #main ul li{
@@ -178,7 +186,7 @@ h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     color: #7b7d82;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #main ul li a{
@@ -273,17 +281,15 @@ section h5{
 } */
 
 /*********************************/
-/************ playbar ************/
+/******** footer-playbar *********/
 /*********************************/
 
-#playbar{
+#footer-playbar{
     background-color: #282828;
     height: 80px;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 1rem;
+    z-index: 999999999999999;
 }
 
 /* left content */
@@ -391,7 +397,7 @@ section h5{
 }
 
 /* display s */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
      /* main */
      .card{
         margin-top: 1.5rem;
@@ -435,7 +441,7 @@ section h5{
     }
 }
 /* display xs */
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 480px){
 
     /* sidebar */
     #sidebar{
@@ -448,31 +454,36 @@ section h5{
         padding: 0;
     }
 
-    .container-loghi{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logo{
-        display: none;
-    }
-
-    #logo-small{
+    #logo-small,
+    #home>img,
+    #search>img,
+    #library>img{
         display: block;
-        width: 50%;
-        margin: 0;
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
     }
 
-    #home h5, #search h5, #library h5{
+    #home,
+    #search,
+    #library{
+        flex-direction: column;
+    }
+
+    #logo,
+    #home h5, 
+    #search h5, 
+    #library h5,
+    #aside-top h3, 
+    #add-playlist,
+    #list-playlist,
+    #aside-bottom h6,
+    #aside-bottom h4,
+    #aside-bottom hr{
         display: none;
     }
 
-    #sidebar h3, #playlist{
-        display: none;
-    }
-
-    #sidebar ul li{
+    #aside-top ul li{
         margin: 1rem 0;
     }
 
@@ -480,45 +491,34 @@ section h5{
         border: none;
         justify-content: center;
     }
-    
-    #home>img, #search>img, #library>img{
-        width: 40%;
-    }
-    
-    #home{
-        border: none;
-    }
 
-    #profile{
-        align-items: center;
+    #aside-bottom #profile-logo{
+        margin: 0 auto;
+        background-color: #5a5a5a;
+        border-radius: 50%;
+    }
+    
+    #aside-bottom {
+        display: block;
+        margin: 0 auto;
         padding: 0;
     }
 
-    #profile h6{
-        display: none;
-    }
-
-    #profile hr{
-        display: none;
-    }
-
-    #profile h4{
-        display: none;
-    }
-
-    #profile #profile-logo{
-        margin: 0.5rem 0 0.5rem 0;
-    }
-
-    #profile div{
-        justify-content: center;
-        align-items: center;
-    }
-
-    #profile div img{
-        width: 40%;
+    #aside-bottom div{
+        display: block;
     }
     
+    #aside-bottom img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #aside-bottom #download{
+        margin-right: 0;
+        margin-left: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+
     /* main */
     #main{
         width: calc(100% - 50px);
