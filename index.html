@@ -232,7 +232,9 @@
                 <br>
                 <div class="flex-row ai-center">
                     <h6>0:25</h6>
-                    <input class="range-bar" type="range" id="play" name="vol" min="0" max="100">
+                    <div id="progress-bar" class="relative">
+                        <div id="progress-value" class="absolute"></div>
+                    </div>
                     <h6>4:35</h6>
                 </div>
             </div>
@@ -243,7 +245,9 @@
                     <i class="fa-solid fa-desktop"></i>
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
-                <input class="range-bar" type="range" id="vol" name="vol" min="0" max="100">
+                <div id="volume-bar" class="relative">
+                    <div id="volume-value" class="absolute"></div>
+                </div>
             </div>
 
         </div>

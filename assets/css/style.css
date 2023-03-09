@@ -16,7 +16,6 @@
 /*********************************/
 /************ sidebar ************/
 /*********************************/
-
 #sidebar{
     height: 100%;
     width: 180px;
@@ -153,7 +152,6 @@
 /*********************************/
 /************ upperbar ***********/
 /*********************************/
-
 #upperbar{
     z-index: 999999;
     height: 80px;
@@ -167,7 +165,6 @@
 /*********************************/
 /************ main ***************/
 /*********************************/
-
 #main{
     height: 100%;
     width: calc(100% - 180px);
@@ -277,14 +274,9 @@ section h5{
     aspect-ratio: 1;
 }
 
-/* #main ul li:first-child{
-    border-bottom: 1px  solid #adff30;
-} */
-
 /*********************************/
 /******** footer-playbar *********/
 /*********************************/
-
 #footer-playbar{
     background-color: #282828;
     height: 80px;
@@ -340,20 +332,24 @@ section h5{
     margin-right: 1rem;
 }
 
-.range-bar {
-    /* -webkit-appearance: none; */
-    height: 0.2rem;
+#volume-bar{
+    width: 5rem;
+    height: 0.4rem;
     border-radius: 1rem;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
+    background-color:#5a5a5a;
 }
 
-#vol{
-    width: 6rem;
+#volume-value{
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color:white;
+    opacity: 0.6;
 }
 
-.volume-range:hover {
+#volume-bar:hover #volume-value{
     opacity: 1;
 }
 
@@ -366,6 +362,27 @@ section h5{
 #center-content i, #center-content h6 {
     margin: 0 0.7rem;
     color: white;
+}
+
+#progress-bar{
+    width: 20rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+    background-color:#5a5a5a;
+}
+
+#progress-value{
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color:white;
+    opacity: 0.6;
+}
+
+#progress-bar:hover #progress-value{
+    opacity: 1;
 }
 
 .fa-circle-play{
@@ -422,7 +439,7 @@ section h5{
     }
 
     #left-content img{
-        width: 3rem;
+        width: 4rem;
     }
 
     #right-content{
@@ -433,8 +450,16 @@ section h5{
         margin: 0.2rem;
     }
 
-    #vol{
+    #right-content .fa-desktop{
+        display: none;
+    }
+
+    #volume-bar{
         width: 3rem;
+    }
+    
+    #volume-value{
+        width: 1.5rem;
     }
 
     .fa-circle-play{
@@ -446,10 +471,15 @@ section h5{
         color: white;
     }
 
-    #play{
-        width: 5rem;
+    #progress-bar{
+        width: 8rem;
+    }
+    
+    #progress-value{
+        width: 4rem;
     }
 }
+
 /* display xs */
 @media only screen and (max-width: 480px){
 
@@ -547,7 +577,7 @@ section h5{
     }
 
     #left-content img{
-        width: 3rem;
+        width: 4rem;
     }
 
      #left-content #interactive-icon{
@@ -558,17 +588,12 @@ section h5{
         flex-direction: column;
         justify-content:flex-end;
         align-items:flex-end;
-        margin-left: 1rem;
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
 
-    #right-content .fa-volume-high{
-        margin: 0;
-    }
-
-    #vol{
-        width: 3rem;
-        margin-top: 1rem;
+    #right-content .fa-volume-high,
+    #right-content #volume-bar{
+        display: none;
     }
 
     .fa-circle-play{
@@ -580,7 +605,11 @@ section h5{
         color: white;
     }
 
-    #play{
+    #progress-bar{
+        width: 6rem;
+    }
+    
+    #progress-value{
         width: 3rem;
     }
 }
