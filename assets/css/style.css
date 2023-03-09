@@ -263,12 +263,13 @@ section h3{
     padding: 0;
     margin: 0.5rem 0;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    color: white;
 }
 
 section h5{
     color: #5a5a5a;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .artist{
@@ -371,7 +372,7 @@ section h5{
     font-size: 2rem;
 }
 
-#playbar .fa-circle-play:hover{
+#footer-playbar .fa-circle-play:hover{
     transform: scale(1.1);
 }
 
@@ -401,8 +402,17 @@ section h5{
      /* main */
      .card{
         margin-top: 1.5rem;
-        margin-left: 1%;
-        flex-basis: calc((100% / 2) - 1%);
+        margin-left: 3%;
+        margin-right: 3%;
+        flex-basis: calc((100% / 2) - 6%);
+    }
+
+    section h3{
+        font-size: 0.6rem;
+    }
+
+    section h5{
+        font-size: 0.5rem;
     }
 
     /* playbar */
