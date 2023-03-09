@@ -27,19 +27,19 @@
                     <li>
                         <div id="home" class="flex-row ai-center">
                             <img src="./assets/img/home.svg" alt="home" width="100%">
-                            <h5>Home</h5>
+                            <a href="#"><h5>Home</h5></a>
                         </div>
                     </li>
                     <li>
                         <div id="search" class="flex-row ai-center">
                             <img src="./assets/img/search.svg" alt="search" width="100%">
-                            <h5>Cerca</h5>
+                            <a href="#"><h5>Cerca</h5></a>
                         </div>
                     </li>
                     <li>
                         <div id="library" class="flex-row ai-center">
                             <img src="./assets/img/libreria.svg" alt="library" width="100%">
-                            <h5>La tua libreria</h5>
+                            <a href="#"><h5>La tua libreria</h5></a>
                         </div>
                     </li>
                 </ul>
@@ -49,17 +49,17 @@
                 <div id="playlist" class="flex-column">
                     <div class="flex-row ai-center">
                         <i class="fa-sharp fa-solid fa-plus"></i>
-                        <h4>Crea Playlist</h4>
+                        <a href="#"><h4>Crea Playlist</h4></a>
                     </div>
                     <div>
                         <ul>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
                         </ul>
                     </div>
                 </div>
@@ -68,65 +68,89 @@
             <div id="profile" class="flex-column">
                 <div class="flex-row ai-center">
                     <img src="./assets/img/download.svg" alt="download" width="12%">
-                    <h6>Installa app</h6>
+                    <a href="#"><h6>Installa app</h6></a>
                 </div>
                 <hr>
                 <div class="flex-row ai-center">
                     <img id="profile-logo" src="./assets/img/profile.svg" alt="profile" width="15%">
-                    <h4>John Doe</h4>
+                    <a href="#"><h4>John Doe</h4></a>
                 </div>
             </div>           
         </div>
 
         <div id="upperbar" class="sticky fixed flex-row jc-end ai-center">
-            <div class="bt">effettua l'upgrade</div>
+            <a href="#"><div class="bt">effettua l'upgrade</div></a>
         </div>
 
         <div id="main" class="fixed">
             <ul class="flex-row jc-center flex-wrap ai-center">
                 <li>
-                    <div class="flex-column ai-center">
+                    <a href="#"><div class="flex-column ai-center">
                         in evidenza
                         <div id="border-b-green"></div>
-                    </div> 
+                    </div></a>
                 </li>
-                <li>podcast</li>
-                <li>classifiche</li>
-                <li>generi e mood</li>
-                <li>nuove uscite</li>
-                <li>scopri</li>
+                <li><a href="#">podcast</a></li>
+                <li><a href="#">classifiche</a></li>
+                <li><a href="#">generi e mood</a></li>
+                <li><a href="#">nuove uscite</a></li>
+                <li><a href="#">scopri</a></li>
             </ul>
 
             <section>
                 <h2>Recently played</h2>
                 <div class="flex-row jc-start flex-wrap">
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/metal_lifting.jpg" alt="metal" width="100%">
+                        <div class="relative"> 
+                            <img src="./assets/img/metal_lifting.jpg" alt="metal" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Heavy Metal</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/stranger.jpeg" alt="stranger" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/stranger.jpeg" alt="stranger" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                         <h5>Kyle Dixon & Michael Stein</h5>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/aquietplace.jpeg" alt="quiet" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/aquietplace.jpeg" alt="quiet" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>A quiet place</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/split.jpeg" alt="split" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/split.jpeg" alt="split" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Split</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/cure.jpeg" alt="cure" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/cure.jpeg" alt="cure" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>A cure for wellness</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/sinister.jpeg" alt="metal" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/sinister.jpeg" alt="metal" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Sinister</h3>
                         <h5>Subtitle</h5>
                     </div>
@@ -138,11 +162,19 @@
                 <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
                 <div class="flex-row jc-start">
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/radar.jpeg" alt="radar" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/radar.jpeg" alt="radar" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Release Radar</h3>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img src="./assets/img/mixdaily.jpeg" alt="daily" width="100%">
+                        <div class="relative">
+                            <img src="./assets/img/mixdaily.jpeg" alt="daily" width="100%">
+                            <div class="back-hover absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Daily Mix 1</h3>
                     </div>
                 </div>
@@ -153,11 +185,19 @@
                 <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
                 <div class="flex-row jc-start">
                     <div class="card flex-column jc-start ai-center">
-                        <img class="artist" src="./assets/img/youg.jpeg" alt="lana" width="100%">
+                        <div class="relative">
+                            <img class="artist" src="./assets/img/youg.jpeg" alt="lana" width="100%">
+                            <div class="back-hover-round absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Lana del Rey</h3>
                     </div>
                     <div class="card flex-column jc-start ai-center">
-                        <img class="artist" src="./assets/img/einaudi.jpeg" alt="einaudi" width="100%">
+                        <div class="relative">
+                            <img class="artist" src="./assets/img/einaudi.jpeg" alt="einaudi" width="100%">
+                            <div class="back-hover-round absolute"></div>
+                            <i class="fa-regular fa-circle-play absolute"></i>
+                        </div>
                         <h3>Ludovico Einaudi</h3>
                     </div>
                 </div>
@@ -170,7 +210,7 @@
                     <img src="./assets/img/sinister.jpeg" alt="sinister" width="20%">
                     <div id="description-song" class="flex-column jc-center">
                         <h6>Sinister</h6>
-                        <p>Brano Nome</p>
+                        <a href="#"><p>Brano Nome</p></a>
                     </div>
                 </div>
                 
