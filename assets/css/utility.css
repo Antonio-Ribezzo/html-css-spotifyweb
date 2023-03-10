@@ -49,6 +49,10 @@ h6{
 }
 
 /* utility */
+.gap{
+    gap: 1rem;
+}
+
 .debug{
     border: 2px solid red;
 }

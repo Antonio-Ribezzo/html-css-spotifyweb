@@ -58,7 +58,7 @@
 #aside-top h5, 
 #aside-top #search img,
 #aside-top #library img,
-#list-playlist ul li a,
+#list-playlist ul li a h5,
 #add-playlist a{
     color: white;
     opacity: 0.6;
@@ -70,7 +70,7 @@
 
 #aside-top #search:hover img,
 #aside-top #library:hover img,
-#list-playlist ul li a:hover,
+#list-playlist ul li a h5:hover,
 #add-playlist:hover i,
 #add-playlist:hover a{
     opacity: 1;
@@ -182,21 +182,41 @@
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
-    color: #7b7d82;
     margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #main ul li a{
-    color: #7b7d82;
+    color: white;
+    opacity: 0.6;
+    position: relative;
 }
 
 #main ul li a:hover{
-    color: white;
+    opacity: 1;
 }
 
-#border-b-green{
+#main ul .active a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0.2rem;
     width: 2rem;
-    border: 1px solid greenyellow;
+    background-color: yellowgreen;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main ul li:hover a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 2rem;
+    background-color: yellowgreen;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 section h2{
@@ -206,8 +226,7 @@ section h2{
 
 .card{
     margin-top: 1.5rem;
-    margin-left: 1%;
-    flex-basis: calc((100% / 6) - 1%);
+    flex-basis: calc(90% / 6);
 }
 
 .card i{
@@ -249,10 +268,12 @@ section h2{
 
 .card:hover .back-hover{
     display: block;
+    cursor: pointer;
 }
 
 .card:hover .back-hover-round{
     display: block;
+    cursor: pointer;
 }
 
 
@@ -282,6 +303,7 @@ section h5{
     height: 80px;
     width: 100%;
     padding: 1rem;
+    position: relative;
     z-index: 999999999999999;
 }
 
@@ -292,7 +314,7 @@ section h5{
 }
 
 #left-content img{
-    width: 3rem;
+    width: 4rem;
 }
 
 #left-content img, #left-content .fa-heart{
@@ -321,7 +343,19 @@ section h5{
 /* right content */
 #right-content{
     flex-basis: 20%;
+}
+
+.fa-bars,
+.fa-desktop,
+.fa-volume-high{
     color: white;
+    opacity: 0.6;
+}
+
+.fa-bars:hover,
+.fa-desktop:hover,
+.fa-volume-high:hover{
+    opacity: 1;
 }
 
 .fa-desktop{
@@ -334,7 +368,7 @@ section h5{
 
 #volume-bar{
     width: 5rem;
-    height: 0.4rem;
+    height: 0.2rem;
     border-radius: 1rem;
     background-color:#5a5a5a;
 }
@@ -366,7 +400,7 @@ section h5{
 
 #progress-bar{
     width: 20rem;
-    height: 0.4rem;
+    height: 0.2rem;
     border-radius: 1rem;
     background-color:#5a5a5a;
 }
@@ -405,7 +439,7 @@ section h5{
 @media only screen and (max-width:1024px){
     /* main */
     .card{
-        flex-basis: calc((100% / 4) - 1%);
+        flex-basis: calc(90% / 4);
     }
 
     /* playbar */
@@ -419,9 +453,7 @@ section h5{
      /* main */
      .card{
         margin-top: 1.5rem;
-        margin-left: 3%;
-        margin-right: 3%;
-        flex-basis: calc((100% / 2) - 6%);
+        flex-basis: calc(90% / 2);
     }
 
     section h3{
@@ -436,10 +468,6 @@ section h5{
     #left-content #interactive-icon{
         flex-direction: column;
         margin-left: 1rem;
-    }
-
-    #left-content img{
-        width: 4rem;
     }
 
     #right-content{
@@ -574,10 +602,6 @@ section h5{
      /* playbar */
     #description-song{
         display: none;
-    }
-
-    #left-content img{
-        width: 4rem;
     }
 
      #left-content #interactive-icon{
